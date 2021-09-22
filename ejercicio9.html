@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio 9</title>
+  </head>
+  <body>
+    <script>
+      let temperatura = parseInt(
+        window.prompt("¿Qué temperatura hace en tu zona?")
+      );
+
+      if (temperatura >= 40) {
+        window.alert("Vete a otro sitio");
+      } else if (temperatura < 40 && temperatura > 30) {
+        window.alert("Enciende el aire acondicionado");
+      } else if (temperatura <= 30 && temperatura >= 20) {
+        window.alert("No hagas nada");
+      } else if (temperatura <= 20 && temperatura >= 10) {
+        window.alert("Enciende la calefacción");
+      } else if (temperatura < 10) {
+        window.alert("Vete a otro sitio");
+      } else {
+        window.alert("El valor introducido no es válido");
+      }
+    </script>
+  </body>
+</html>

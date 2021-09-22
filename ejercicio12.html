@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio 12</title>
+  </head>
+  <body>
+    <script>
+      let puestoUsuario = parseInt(
+        window.prompt("¿En qué puesto finalizaste la carrera?")
+      );
+
+      if (puestoUsuario == 1) {
+        window.alert("Ganaste");
+      } else {
+        window.alert("Lo importante es participar");
+      }
+
+      let puestoUsuario2 = parseInt(
+        window.prompt("¿En qué puesto finalizaste la carrera?")
+      );
+
+      if (puestoUsuario2 == 1) {
+        window.alert("Medalla de Oro");
+      } else if (puestoUsuario2 == 2) {
+        window.alert("Medalla de Plata");
+      } else if (puestoUsuario2 == 3) {
+        window.alert("Medalla de Bronce");
+      } else {
+        window.alert("Lo importante es participar");
+      }
+
+      let puestoUsuario3 = parseInt(
+        window.prompt("¿En qué puesto finalizaste la carrera?")
+      );
+
+      switch (puestoUsuario3) {
+        case 1:
+          window.alert("Medalla de Oro");
+          break;
+        case 2:
+          window.alert("Medalla de Plata");
+          break;
+        case 3:
+          window.alert("Medalla de Bronce");
+          break;
+        default:
+          window.alert("Lo importante es participar");
+          break;
+      }
+
+      let puestoUsuario4 = parseInt(
+        window.prompt("¿En qué puesto finalizaste la carrera?")
+      );
+
+      switch (puestoUsuario4) {
+        case 1:
+        case 2:
+        case 3:
+          window.alert("Sube al podium");
+          break;
+        default:
+          window.alert("Se acabó la carrera");
+          break;
+      }
+    </script>
+  </body>
+</html>

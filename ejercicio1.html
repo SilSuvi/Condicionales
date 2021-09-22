@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio 1</title>
+  </head>
+  <body>
+    <script>
+      let num1 = parseInt(window.prompt("Dime un número"));
+      let num2 = parseInt(window.prompt("Dime otro número"));
+
+      let suma = num1 + num2;
+      console.log("El total de la suma es" + " " + suma);
+      let resta = num1 - num2;
+      console.log("El total de la resta es" + " " + resta);
+      let multiplicacion = num1 * num2;
+      console.log("El total de la multiplicación es" + " " + multiplicacion);
+      let media = num1 / num2;
+      console.log("El total de la media es de" + " " + media);
+
+      if (num1 > num2) {
+        window.alert("El número 1 es mayor que el número 2");
+      } else if (num2 > num1) {
+        window.alert("El número 2 es mayor que el número 1");
+      } else if (num1 < num2) {
+        window.alert("El número 1 es más pequeño que el número 2");
+      } else if (num2 < num1) {
+        window.alert("El número 2 es más pequeño que el número 1");
+      } else {
+        window.alert("El valor introducido no es válido");
+      }
+    </script>
+  </body>
+</html>

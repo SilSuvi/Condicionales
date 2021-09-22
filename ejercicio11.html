@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio 11</title>
+  </head>
+  <body>
+    <script>
+      let numero1String = window.prompt(
+        "Introduce un número entero entre 25 y 75"
+      );
+      let numero2String = window.prompt(
+        "Introduce otro número entero entre 25 y 75"
+      );
+
+      let num1 = parseInt(numero1String);
+      let num2 = parseInt(numero2String);
+
+      if (num1 >= 25 && num1 <= 75 && num2 >= 25 && num2 <= 75) {
+        let stringA = numero1String.substring(0, 1);
+        let stringB = numero1String.substring(1);
+        let stringC = numero2String.substring(0, 1);
+        let stringD = numero2String.substring(1);
+        if (
+          stringA === stringC ||
+          stringA === stringD ||
+          stringB === stringC ||
+          stringB === stringD
+        ) {
+          window.alert("Hay dos números iguales");
+        } else {
+          window.alert("No hay ningún número igual");
+        }
+      } else {
+        window.alert("El valor introducido no es válido");
+      }
+    </script>
+  </body>
+</html>

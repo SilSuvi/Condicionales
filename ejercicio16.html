@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio 16</title>
+  </head>
+  <body>
+    <script>
+      let estaciones = window.prompt(
+        "¿Qué estación prefieres? ¿Primavera, Verano, Otoño o Invierno?"
+      );
+
+      if (estaciones == "Primavera") {
+        window.alert("¡Ojo! ¡La Primavera la sangre altera!");
+      } else if (estaciones == "Verano") {
+        window.alert(
+          "¡Mira por la ventana! ¡Cuando viene la golondrina, el verano está encima!"
+        );
+      } else if (estaciones == "Otoño") {
+        window.alert(
+          "¡Cuidado con los sofocos! ¡Calenturas otoñales, o muy largas o mortales!"
+        );
+      } else if (estaciones == "Invierno") {
+        window.alert(
+          "¡En Burgos no hay más que dos estaciones! ¡La de invierno y la del ferrocarril!"
+        );
+      } else {
+        window.alert("La estación introducida no es válida.");
+      }
+
+      let estaciones2 = window.prompt(
+        "¿Quñe estación prefieres? ¿Primavera, Verano, Otoño o Invierno?"
+      );
+
+      switch (estaciones2) {
+        case "Primavera":
+          window.alert("¡Ojo! ¡La Primavera la sangre altera!");
+          break;
+        case "Verano":
+          window.alert(
+            "¡Mira por la ventana! ¡Cuando viene la golondrina, el verano está encima!"
+          );
+          break;
+        case "Otoño":
+          window.alert(
+            "¡Cuidado con los sofocos! ¡Calenturas otoñales, o muy largas o mortales!"
+          );
+          break;
+        case "Invierno":
+          window.alert(
+            "¡En Burgos no hay más que dos estaciones! ¡La de invierno y la del ferrocarril!"
+          );
+          break;
+        default:
+          window.alert("La estación introducida no es válida.");
+          break;
+      }
+    </script>
+  </body>
+</html>
