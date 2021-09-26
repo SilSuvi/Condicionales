@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio 4</title>
+  </head>
+  <body>
+    <script>
+      let contra = window.prompt("Introduce una contraseña");
+
+      let mensaje =
+        contra.length <= 8
+          ? "La contraseña no es válida porque tiene igual o menos de ocho caracteres"
+          : "La contraseña es válida porque tiene más de ocho caracteres";
+
+      window.alert(mensaje);
+    </script>
+  </body>
+</html>
